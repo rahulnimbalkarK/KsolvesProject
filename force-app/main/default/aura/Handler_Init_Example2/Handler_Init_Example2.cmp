@@ -1,0 +1,19 @@
+<aura:component>
+<aura:attribute name="empName" type="String"/>
+<aura:attribute name="Company" type="String"/>
+<aura:attribute name="Salary" type="Integer"/>
+<aura:attribute name="Aval" type="Integer"/>
+<aura:attribute name="Bval" type="Integer"/>
+<aura:attribute name="Cval" type ="Integer"/>
+<aura:handler name="init" value="{!this}" action="{!c.show}"/>
+<lightning:card>
+    Employee Name : {!v.empName}<br/><br/>
+    Company  Name : {!v.Company}<br/><br/>
+    Salary        : {!v.Salary}<br/><br/>
+</lightning:card>
+<lightning:card title="Addition Calculator">
+    A value : {!v.Aval}<br/>
+    B value : {!v.Bval}<br/>
+    Addition : {!v.Cval}
+</lightning:card>
+</aura:component>

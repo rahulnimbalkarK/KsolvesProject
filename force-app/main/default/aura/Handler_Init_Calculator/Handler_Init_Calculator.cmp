@@ -1,0 +1,14 @@
+<aura:component>
+<aura:attribute name ="Amount" type = "Integer"/>
+<aura:attribute name = "Rate"  type = "Integer"/> 
+<aura:attribute name = "Year"  type = "Integer"/>
+<aura:attribute name = "Interest" type = "Integer"/>
+
+<aura:handler name="init" value = "{!this}" action = "{!c.show}"/>
+<lightning:card title = "Intrest Rate Calculator" iconName="standard:account">
+    Amount   :  {!v.Amount}<br/>
+    Rate     :  {!v.Rate} <br/>
+    Year     :  {!v.Year}<br/>
+    Interest :  {!v.Interest}
+</lightning:card> 
+</aura:component>	

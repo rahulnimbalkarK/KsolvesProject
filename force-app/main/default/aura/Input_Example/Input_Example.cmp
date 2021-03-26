@@ -1,0 +1,8 @@
+<aura:component>
+<lightning:input label="LastName"/>
+<lightning:input label = "FirstName" type ="Text"/>
+<lightning:input label = "DOB"       type = "Date"/>
+<lightning:input label = "Time"      type = "time"/>
+<lightning:input label = "Email"     type = "email"/>
+
+</aura:component>	
