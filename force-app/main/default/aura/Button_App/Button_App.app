@@ -5,7 +5,8 @@
     <c:Handler_Init_Calculator Amount="10000" Rate="2" Year="5"/>  
     <c:Input_Example/>
     <c:Calculator_Example_2/>
-    <c:InputID_Example_3/>-->
+    <c:InputID_Example_3/>
     <c:IfElse_Example_1/>
-    
+    <c:Sobject_Example_1/>-->
+    <c:Layout_Example_1/>
 </aura:application>

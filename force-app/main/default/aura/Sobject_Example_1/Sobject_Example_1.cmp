@@ -1,0 +1,12 @@
+<aura:component>
+<aura:attribute name="acc" type="Account" default="{sObjectType:'Account'}"/>
+<lightning:card title="Account" iconName="standard:account" >
+<aura:set attribute="actions">
+    <lightning:button label="Submit" onclick="{!c.show}"/> 
+</aura:set>
+<lightning:input label = "Name" value="{!v.acc.Name}"/>
+<lightning:input label="Rating" value="{!v.acc.rating}"/>
+<lightning:input label="Phone" value="{!v.acc.Phone}"/>
+    
+</lightning:card>
+</aura:component>
