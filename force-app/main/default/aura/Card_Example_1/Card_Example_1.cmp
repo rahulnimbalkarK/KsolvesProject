@@ -8,7 +8,7 @@
             <lightning:buttonGroup>
                 <lightning:button label = "SAve"/>
                 <lightning:button label="Cancel"/>
-            </lightning:buttonGroup> 
+            </lightning:buttonGroup>
         </aura:set>
         Last Name : <br/>
         Company :  <br/>

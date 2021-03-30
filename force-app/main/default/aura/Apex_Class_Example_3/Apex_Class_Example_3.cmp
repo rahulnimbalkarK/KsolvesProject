@@ -7,22 +7,18 @@
         </aura:set>
         <aura:set attribute="actions">
             <lightning:buttonGroup>
-                <lightning:button label ="Save it" onclick="{!save}"/>
+                <lightning:button label ="Save" onclick="{!save}"/>
                 <lightning:button label = "Cancel" onclick="{!c.cancel}"/> 
             </lightning:buttonGroup>
         </aura:set>
         <lightning:layout class="padding-around">
             <lightning:layoutItem size="6" padding="around-small" >
-                <div>
-                    <lightning:input label="Name"/>
-                </div>
+Input Area
             </lightning:layoutItem>
             <lightning:layoutItem size="6" padding="around-small" >
-              <div>
-
-              </div> 
+              Display  
             </lightning:layoutItem>
         </lightning:layout>
     </lightning:card>
 </div>
-</aura:component>	
+</aura:component>

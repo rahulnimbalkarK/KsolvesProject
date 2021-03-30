@@ -1,35 +1,23 @@
 <aura:component>
-<aura:attribute name="acc" type="Account" default="{sObjectType:'Account'}" />
-<aura:attribute name="con" type="Contact" default="{sObjectType:'Contact'}"/>
-
-<lightning:layout multipleRows="true" >
-<lightning:layoutItem size="12" padding="around-small"  >
-    <lightning:card title="Invoice Page" iconName="utility:company">
-        <aura:set attribute="actions">
-            <lightning:buttonGroup>
-                <lightning:button label="New "/>
-                <lightning:button label="Cancel"/>
-                <lightning:button label="Delete"/>      
-            </lightning:buttonGroup>
-        </aura:set>
-        <br/>
-        Last Name  : Nimbalkar &nbsp;&nbsp;&nbsp;&nbsp;
-        First Name : Rahul
-    </lightning:card>   
-</lightning:layoutItem>
-<lightning:layoutItem size="4" padding="around-small" >
-    <div>
-        <lightning:input label="Name" value="{!v.acc.Name}"/>
-        <lightning:input label="Phone" value="{!v.acc.Phone}"/>
-        <lightning:input label="Rating" value="{!v.acc.Rating}"/>      
-    </div>
-</lightning:layoutItem> 
-<lightning:layoutItem size="8" padding="around-small" >
-    <div>
-        <lightning:input label="Last Name" value="{!v.con.LastName}"/>
-        <lightning:input label="First Name" value="{!v.con.FirstName}"/>
-        <lightning:input label="Phone" value="{!v.con.Phone}"/>      
-    </div>
-</lightning:layoutItem> 
-</lightning:layout>
-</aura:component>	
+    <aura:attribute name="acc" type="Account" default="{sObjectType:'Account'}" />
+    <aura:attribute name="con" type="Contact" default="{sObjectType:'Contact'}"/>
+    
+    <lightning:layout multipleRows="true" >
+        <lightning:layoutItem size="12" padding="around-small"  >
+            <lightning:card title="Invoice Page" iconName="utility:company">
+                <aura:set attribute="actions">
+                    <lightning:buttonGroup>
+                        <lightning:button label="New "/>
+                        <lightning:button label="Cancel"/>
+                        <lightning:button label="Delete"/>      
+                    </lightning:buttonGroup>
+                </aura:set>
+            </lightning:card>   
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout>
+        <lightning:layoutItem size="6" padding="around-small" >
+            LayoutItem2
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

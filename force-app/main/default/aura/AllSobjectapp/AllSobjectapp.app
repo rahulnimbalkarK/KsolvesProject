@@ -1,4 +1,4 @@
 <aura:application extends ='force:slds' >
-  <!--  <c:AllSobject />-->
-    <c:DisplayObjects/>
+  
+    <c:SearchObject/>
 </aura:application>
