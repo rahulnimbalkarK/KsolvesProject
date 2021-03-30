@@ -7,7 +7,7 @@
         </aura:set>
         <aura:set attribute="actions">
             <lightning:buttonGroup>
-                <lightning:button label ="Save" onclick="{!save}"/>
+                <lightning:button label ="Save it" onclick="{!save}"/>
                 <lightning:button label = "Cancel" onclick="{!c.cancel}"/> 
             </lightning:buttonGroup>
         </aura:set>
