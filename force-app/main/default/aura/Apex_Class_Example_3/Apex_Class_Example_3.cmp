@@ -1,0 +1,28 @@
+<aura:component controller="Apex_class_Example_3" > 
+<div>
+    <lightning:card title="Account" iconName="standard:account" >
+        <aura:set attribute ="title">
+        <h1>Account</h1>
+        <h2>New Account</h2>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:buttonGroup>
+                <lightning:button label ="Save" onclick="{!save}"/>
+                <lightning:button label = "Cancel" onclick="{!c.cancel}"/> 
+            </lightning:buttonGroup>
+        </aura:set>
+        <lightning:layout class="padding-around">
+            <lightning:layoutItem size="6" padding="around-small" >
+                <div>
+                    <lightning:input label="Name"/>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="6" padding="around-small" >
+              <div>
+
+              </div> 
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</div>
+</aura:component>	

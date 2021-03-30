@@ -7,6 +7,7 @@
     <c:Calculator_Example_2/>
     <c:InputID_Example_3/>
     <c:IfElse_Example_1/>
-    <c:Sobject_Example_1/>-->
-    <c:Layout_Example_1/>
+    <c:Sobject_Example_1/>
+    <c:Layout_Example_1/>-->
+    <c:Apex_Class_Example_3/>
 </aura:application>

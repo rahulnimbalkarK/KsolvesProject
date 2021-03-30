@@ -1,0 +1,5 @@
+<aura:component controller="Example_Two" >
+
+<lightning:button label="Create" onclick="{!c.callMe}"/>
+
+</aura:component>	
