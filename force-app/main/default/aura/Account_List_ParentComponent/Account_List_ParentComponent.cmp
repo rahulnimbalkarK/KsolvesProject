@@ -1,0 +1,19 @@
+<aura:component>
+    <aura:attribute name="accounts" type="List" default="[]"/>
+    <aura:attribute name="fields" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.callMe}"/>
+    <!--Write the handler to handle the event fired  by newAccount.cmp-->
+    <aura:handler name="rahul" event="c:Acc_Event" action="{!c.show}"/>
+    <br/>
+    <c:New_Account_Child/>
+    <br/>
+    <!--Display the List of records in DataTable-->
+    <div style="height: 300px">
+        <lightning:datatable
+                keyField="id"
+                data="{! v.accounts }"
+                columns="{! v.fields }"
+                hideCheckboxColumn="false"/>
+    </div>
+
+</aura:component>

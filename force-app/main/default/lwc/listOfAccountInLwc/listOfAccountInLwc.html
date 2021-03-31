@@ -1,0 +1,12 @@
+<template>
+   <lightning-card title="Account detail" icon-name="Account">
+       <template if:true={LWCNewExample.data}>
+           <template for:each={LWCNewExample.data} for:item="account">
+               <p key ={account.id}>{account.Name}</p>
+           </template>
+       </template>
+       <template if:true={LWCNewExample.error}>
+           <p> {LWCNewExample.error}</p>
+    </template>
+   </lightning-card>
+</template>
