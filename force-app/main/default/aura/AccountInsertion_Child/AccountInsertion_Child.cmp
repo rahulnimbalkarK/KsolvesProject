@@ -1,0 +1,15 @@
+<aura:component  controller="ComponentEventCall" >
+    <aura:attribute name="newAccount" type="Account" default="{'sObject':'Account'}"/>
+    <!--register the event -->
+   <aura:registerEvent name="childEvent"  type="c:Account_Insertion_Event"/>
+    <!-- Create the lightning card for Account Insertion-->
+    <lightning:card title="Account">
+        <aura:set attribute="actions">
+            <lightning:button label="Create Account" onclick="{!c.Add}"/> 
+        </aura:set>
+        <lightning:input label="Account Name" value="{!v.newAccount.Name}"/>
+        <lightning:input label="Phone" value="{!v.newAccount.Phone}"/>
+        <lightning:input label="Rating" value="{!v.newAccount.Rating}"/>
+        <lightning:input label="Industry" value="{!v.newAccount.Industry}"/> 
+    </lightning:card>
+</aura:component>

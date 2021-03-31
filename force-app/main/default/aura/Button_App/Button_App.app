@@ -9,6 +9,7 @@
     <c:IfElse_Example_1/>
     <c:Sobject_Example_1/>
     <c:Layout_Example_1/>
-    <c:Apex_Class_Example_3/>-->
-    <c:Account_List_ParentComponent/>
+    <c:Apex_Class_Example_3/>
+    <c:Account_List_ParentComponent/>-->
+    <c:AccountListTable/>
 </aura:application>
