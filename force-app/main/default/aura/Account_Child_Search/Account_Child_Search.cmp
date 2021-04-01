@@ -1,0 +1,12 @@
+<aura:component controller="Event_Example">
+    <aura:attribute name="accName" type="string"/>
+    <aura:attribute name="accIndustry" type="string"/>
+    <aura:registerEvent name="one" type="c:Application_Account_Event"/>
+    <div>
+        <lightning:input label="Name" value="{!v.accName}"/><br/>
+        <lightning:input label="Industry" value="{!v.accIndustry}"/><br/>
+        <lightning:button label="Search" onclick="{!c.searchData}"/> 
+
+    </div>
+
+</aura:component>	

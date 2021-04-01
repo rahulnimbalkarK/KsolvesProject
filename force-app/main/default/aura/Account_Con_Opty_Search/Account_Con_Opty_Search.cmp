@@ -1,0 +1,13 @@
+<aura:component>
+    <lightning:layout >
+            <lightning:layoutItem padding="around-small" size="4">
+                <c:Account_Child_Search/>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="4" >
+                <c:Account_Child_Contact/>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="4" >
+                <c:Account_Child_Opportunity/>
+            </lightning:layoutItem>
+    </lightning:layout>        
+</aura:component>	

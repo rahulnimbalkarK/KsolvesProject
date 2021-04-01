@@ -10,6 +10,7 @@
     <c:Sobject_Example_1/>
     <c:Layout_Example_1/>
     <c:Apex_Class_Example_3/>
-    <c:Account_List_ParentComponent/>-->
-    <c:AccountListTable/>
+    <c:Account_List_ParentComponent/>
+    <c:AccountListTable/>-->
+    <c:Account_Con_Opty_Search/>
 </aura:application>
