@@ -1,0 +1,43 @@
+<aura:component >
+<div>   
+<lightning:recordViewForm recordId="0015g0000099UGbAAM" objectApiName="Account">
+        
+            <lightning:layout multipleRows="true" >
+                <lightning:layoutItem padding="around-small" size="6"  > 
+                    <lightning:outputField fieldName="Name"/> 
+                </lightning:layoutItem >
+                <lightning:layoutItem padding="around-small" size="6">
+                    <lightning:outputField fieldName="Industry"/> 
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="6">
+                    <lightning:outputField fieldName="Rating"/> 
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="6">
+                    <lightning:outputField fieldName="Phone"/> 
+                </lightning:layoutItem>
+            </lightning:layout>              
+          
+    </lightning:recordViewForm>
+    </div>
+    <br/><br/>
+    <div>   
+        <lightning:recordEditForm recordId="0015g0000099UGbAAM" objectApiName="Account">
+                
+                    <lightning:layout multipleRows="true">
+                        <lightning:layoutItem padding="around-small" size="6"  > 
+                            <lightning:inputField fieldName="Name"/> 
+                        </lightning:layoutItem >
+                        <lightning:layoutItem padding="around-small" size="6">
+                            <lightning:inputField fieldName="Industry"/> 
+                        </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="6">
+                            <lightning:inputField fieldName="Phone"/> 
+                        </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="6">
+                            <lightning:inputField fieldName="Rating"/> 
+                        </lightning:layoutItem>
+                    </lightning:layout>              
+                  
+            </lightning:recordEditForm>
+            </div>
+</aura:component>
