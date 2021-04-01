@@ -1,0 +1,12 @@
+<aura:component controller="Account_Contact_CreateData">
+    <aura:attribute name="con" type="Contact" default="{'sObjectType':'Contact'}"/>
+    
+    <lightning:card title="New Contact">
+        <lightning:input label= "Last Name" value="{!v.con.LastName}"/>
+        <lightning:input label="First Name" value="{!v.con.FirstName}"/>
+        <lightning:input label="Phone"     value="{!v.con.Phone}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Create Contact" onclick="{!c.callCon}"/> 
+        </aura:set> 
+    </lightning:card>
+</aura:component>	
