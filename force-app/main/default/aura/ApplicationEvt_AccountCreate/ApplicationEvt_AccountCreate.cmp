@@ -9,4 +9,4 @@
     <lightning:input label="Industry" value="{!v.acc.Industry}"/> 
 </lightning:card> 
 
-</aura:component>	
+</aura:component>

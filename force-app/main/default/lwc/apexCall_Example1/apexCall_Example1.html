@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Apex Class Example">
+        <div class= "slds-m-around_medium" >
+            <template if:true={accounts.data}>
+                <template for:each={accounts.data} for:item="acc">
+                    <p key={acc.id}> Name   :  {acc.Name} <br/>
+                                     Phone  :  {acc.Phone}<br/>
+                                     Rating :  {acc.Rating}<br/>
+                    </p>
+                </template>
+            </template> 
+        </div>
+    </lightning-card>
+</template>

@@ -9,4 +9,4 @@
             <lightning:button label="Create Contact" onclick="{!c.callCon}"/> 
         </aura:set> 
     </lightning:card>
-</aura:component>	
+</aura:component>

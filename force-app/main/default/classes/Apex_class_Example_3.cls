@@ -18,4 +18,3 @@ public with sharing class Apex_class_Example_3 {
             return result;
         }
     }
-

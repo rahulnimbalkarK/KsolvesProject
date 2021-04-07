@@ -1,6 +1,6 @@
 public class Example_Two {
 @AuraEnabled
-    public static string callAccount(string name, string rating, string industry){
+    public static string callMe(string name, string rating, string industry){
         string result;
         try{
             Account acc = new Account();

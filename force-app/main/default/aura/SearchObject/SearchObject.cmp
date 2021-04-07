@@ -1,0 +1,53 @@
+<aura:component Controller="allObjectList" >
+    <aura:attribute name="options" type="List"/>
+    <aura:attribute name="fieldOptions" type="List"/>
+    <aura:attribute name="selectedObject" type="String"/>
+    <aura:attribute name="query" type="String"/>
+    <aura:attribute name="outputData" type="Object" />
+    <aura:attribute name="selectedObject2" type="String[]"/>
+    <aura:attribute name="fields" type="List" default="['Id']"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small" size="4">
+            <div aria-labelledby="showDataForm">
+               
+                <fieldset class="slds-box slds-theme_default slds-container_small">
+                    <form class="slds-form_stacked">
+                        <lightning:select aura:id="expenseform" name="customObject" label="Select Object" onchange="{!c.onchangeObject}" value="{! v.selectedObject}" required="true">
+                            <option value="None">Select Object</option>
+                            <aura:iteration var="option" items="{! v.options }">
+                                <option value="{! option.value }">{! option.label }</option>
+                            </aura:iteration>
+                        </lightning:select>
+                        <lightning:dualListbox aura:id="expenseform" name="selectedObject2"
+                                               label= "Select fields"
+                                               sourceLabel="Available"
+                                               selectedLabel="Selected"
+                                               fieldLevelHelp="Select your preferred languages"
+                                               options="{!v.fieldOptions}"
+                                               value="{! v.selectedObject2}" onchange="{!c.getQuery}"
+                                               /> 
+                        
+                        <br/>
+                         <h3>Query Creater</h3>
+                        <textarea style="width:100%" >{! v.query}</textarea>
+                        
+                        <div>
+                            <lightning:button label="Query" variant="brand" onclick="{!c.showData}"/>
+                        </div>
+                        
+                    </form>
+                </fieldset>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" size="8">
+            <div style="margin:10px">
+                <lightning:datatable
+                                     keyField="Id"
+                                     data="{! v.outputData }"
+                                     columns="{! v.fields }"
+                                     hideCheckboxColumn="true"/>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

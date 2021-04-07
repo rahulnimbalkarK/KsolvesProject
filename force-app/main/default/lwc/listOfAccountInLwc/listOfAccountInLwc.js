@@ -4,4 +4,3 @@ export default class ListOfAccountInLwc extends LightningElement {
     @wire(getAccount)
     newaccountlist;
 }
-   

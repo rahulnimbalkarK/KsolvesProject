@@ -15,4 +15,4 @@
             columns="{! v.columns }"
             hideCheckboxColumn="true"/>
 </div>
-</aura:component>	
+</aura:component>

@@ -13,4 +13,4 @@
     <lightning:input label="Industry"  value="{!v.newAccount.Industry}"  />
      
 </lightning:card> 
-</aura:component>	
+</aura:component>

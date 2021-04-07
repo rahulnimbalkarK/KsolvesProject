@@ -1,0 +1,34 @@
+<template>
+    <lightning-combobox name="Object" label="Object:" value={ObjectValue} placeholder="Select Object"
+                        options={ObjectOptions} onchange={ObjectHandleChange}>
+                    </lightning-combobox>
+
+
+    <lightning-dual-listbox name="Fields"
+                    label="Select Fields"
+                    value={FieldsValue}
+                    source-label="Available"
+                    selected-label="Selected"
+                    field-level-help="Select your field that we want to query"
+                    options={FieldsOptions}
+                    onchange={FieldsHandleChange}>
+                </lightning-dual-listbox>
+
+
+     <lightning-textarea  name="Query" value={Query} label="Generated Query" onchange={queryHandler}></lightning-textarea>
+    
+
+<div class="common">
+    <lightning-button  label="Query" onclick={queryButtonHandler}></lightning-button>
+    </div>
+
+    
+    <template if:true={record.bool}>
+        <lightning-datatable
+        key-field="id"
+            data={record.data}
+            columns={cols}>
+        </lightning-datatable>
+    </template>
+    
+</template>

@@ -10,4 +10,4 @@
                 <c:Account_Child_Opportunity/>
             </lightning:layoutItem>
     </lightning:layout>        
-</aura:component>	
+</aura:component>

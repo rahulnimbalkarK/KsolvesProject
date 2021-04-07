@@ -15,5 +15,4 @@
                     hideCheckboxColumn="true"/>
         </div>
     </aura:if>
-</aura:component>	
-
+</aura:component>
