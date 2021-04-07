@@ -1,4 +1,5 @@
 <template>
+    <lightning-card title="Query Generator">
     <lightning-combobox name="Object" label="Object:" value={ObjectValue} placeholder="Select Object"
                         options={ObjectOptions} onchange={ObjectHandleChange}>
                     </lightning-combobox>
@@ -25,10 +26,10 @@
     
     <template if:true={record.bool}>
         <lightning-datatable
-        key-field="id"
+            key-field="id"
             data={record.data}
             columns={cols}>
         </lightning-datatable>
     </template>
-    
+</lightning-card>
 </template>
